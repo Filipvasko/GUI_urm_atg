@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/home.svg</file>
+	<file>icons/open_file.svg</file>
+	<file>icons/play_button.svg</file>
+    <file>icons/atg_logo.svg</file>
+    <file>icons/vana_scanmaster.svg</file>
+    <file>icons/database_log.svg</file>
+    <file>icons/scissor_logo.svg</file>
+    </qresource>
+</RCC>
