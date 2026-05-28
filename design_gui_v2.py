@@ -29,8 +29,7 @@ class Ui_QMainWindow(object):
             QMainWindow.setObjectName(u"QMainWindow")
         QMainWindow.resize(1208, 798)
         QMainWindow.setMouseTracking(False)
-        icon = QIcon()
-        icon.addFile(u"../atg_logo.jpg", QSize(), QIcon.Mode.Normal, QIcon.State.On)
+        icon = QIcon("icons/atg_logo.jpg")
         QMainWindow.setWindowIcon(icon)
         QMainWindow.setAutoFillBackground(False)
         QMainWindow.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0.528, y1:0.34, x2:1, y2:1, stop:0 rgba(63, 159, 219, 255), stop:0.579545 rgba(253, 255, 255, 255));")
@@ -101,7 +100,7 @@ class Ui_QMainWindow(object):
 "	color: rgb(225, 225, 225);\n"
 "	border: 2px solid #00AEEF;\n"
 "}")
-        icon2 = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.FolderOpen))
+        icon2 = QIcon.fromTheme("folder-open", QIcon("icons/open_file.svg"))
         self.load_model_btn.setIcon(icon2)
         self.load_model_btn.setIconSize(QSize(25, 25))
         self.load_model_btn.setCheckable(True)
@@ -128,8 +127,7 @@ class Ui_QMainWindow(object):
 "	color: rgb(225, 225, 225);\n"
 "	border: 2px solid #00AEEF;\n"
 "}")
-        icon3 = QIcon()
-        icon3.addFile(u"../scissor_logo.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon3 = QIcon("icons/scissor_logo.png")
         self.cut_process_btn.setIcon(icon3)
         self.cut_process_btn.setIconSize(QSize(25, 25))
         self.cut_process_btn.setCheckable(True)
@@ -156,8 +154,7 @@ class Ui_QMainWindow(object):
 "	color: rgb(225, 225, 225);\n"
 "	border: 2px solid #00AEEF;\n"
 "}")
-        icon4 = QIcon()
-        icon4.addFile(u"../database_log.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon4 = QIcon("icons/database_log.png")
         self.database_btn.setIcon(icon4)
         self.database_btn.setIconSize(QSize(25, 25))
         self.database_btn.setCheckable(True)
@@ -184,8 +181,7 @@ class Ui_QMainWindow(object):
 "	color: rgb(225, 225, 225);\n"
 "	border: 2px solid #00AEEF;\n"
 "}")
-        icon5 = QIcon()
-        icon5.addFile(u"icons/line_traj.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon5 = QIcon("icons/line_traj.svg")
         self.trajektorie_btn.setIcon(icon5)
         self.trajektorie_btn.setIconSize(QSize(25, 25))
         self.trajektorie_btn.setCheckable(True)
@@ -217,8 +213,7 @@ class Ui_QMainWindow(object):
 "	color: rgb(225, 225, 225);\n"
 "	border: 2px solid #00AEEF;\n"
 "}")
-        icon6 = QIcon()
-        icon6.addFile(u"icons/play_button.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon6 = QIcon("icons/play_button.svg")
         self.simulation_btn.setIcon(icon6)
         self.simulation_btn.setIconSize(QSize(25, 25))
         self.simulation_btn.setCheckable(True)
@@ -243,7 +238,7 @@ class Ui_QMainWindow(object):
 "	background-color: rgb(255, 67, 20);\n"
 "	color: rgb(255, 255, 255);\n"
 "}")
-        icon7 = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.SystemShutdown))
+        icon7 = QIcon("icons/system_shutdown.svg")
         self.end_btn.setIcon(icon7)
         self.end_btn.setIconSize(QSize(25, 25))
         self.end_btn.setCheckable(True)
@@ -265,7 +260,7 @@ class Ui_QMainWindow(object):
         self.atg_logo_image.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.atg_logo_image.setFrameShape(QFrame.Shape.Panel)
         self.atg_logo_image.setFrameShadow(QFrame.Shadow.Sunken)
-        self.atg_logo_image.setPixmap(QPixmap(u"../atg_logo.jpg"))
+        self.atg_logo_image.setPixmap(QPixmap(u"icons/atg_logo.jpg"))
         self.atg_logo_image.setScaledContents(True)
         self.atg_logo_image.setMargin(0)
         self.atg_logo_image.setOpenExternalLinks(False)
@@ -1623,7 +1618,7 @@ class Ui_QMainWindow(object):
 "	color: rgb(225, 225, 225);\n"
 "	border: 2px solid #00AEEF;\n"
 "}")
-        icon8 = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.DocumentNew))
+        icon8 = QIcon(QIcon.fromTheme(u"QIcon::ThemeIcon::DocumentNew"))
         self.new_project_btn.setIcon(icon8)
         self.new_project_btn.setIconSize(QSize(30, 30))
         self.new_project_btn.setCheckable(False)

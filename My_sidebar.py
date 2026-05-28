@@ -1,4 +1,4 @@
-from design_gui import Ui_QMainWindow
+from design_gui_v2 import Ui_QMainWindow
 from PySide6.QtWidgets import QMainWindow, QApplication, QLabel, QFrame
 
 class MySideBar(QMainWindow, Ui_QMainWindow):
@@ -12,6 +12,7 @@ class MySideBar(QMainWindow, Ui_QMainWindow):
         self.cut_process_btn.clicked.connect(self.switch_to_cut_process_page)
         self.trajektorie_btn.clicked.connect(self.switch_to_trajektorie_page)
         self.simulation_btn.clicked.connect(self.switch_to_simulation_page)
+        self.database_btn.clicked.connect(self.switch_to_database_page)
 
     def switch_to_menu_page(self):
         self.stackedWidget.setCurrentWidget(self.menu_page)
@@ -27,3 +28,6 @@ class MySideBar(QMainWindow, Ui_QMainWindow):
 
     def switch_to_simulation_page(self):
         self.stackedWidget.setCurrentWidget(self.simulation_page)
+
+    def switch_to_database_page(self):
+        self.stackedWidget.setCurrentWidget(self.database_page)

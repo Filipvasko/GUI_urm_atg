@@ -1,4 +1,4 @@
-from design_gui import Ui_QMainWindow
+from design_gui_v2 import Ui_QMainWindow
 from PySide6.QtWidgets import QWidget, QMessageBox
 
 class HomePage(QWidget, Ui_QMainWindow):
