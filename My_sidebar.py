@@ -1,14 +1,18 @@
 from design_gui_v2 import Ui_QMainWindow
 from PySide6.QtWidgets import QMainWindow
 from pages.home_page import HomePage
+from pages.load_model_page import LoadModel
+from pathlib import Path
 
-class MySideBar(QMainWindow, Ui_QMainWindow):
+class MySideBars(QMainWindow, Ui_QMainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("ATG Navi GUI")
-        self.home_page = HomePage(self)
+        self.root_folder = Path(__file__).resolve().parent
 
+        self.home_page = HomePage(self)
+        self.load_model = LoadModel(self,self.root_folder)
         self.Menu_btn.clicked.connect(self.switch_to_menu_page)
         self.load_model_btn.clicked.connect(self.switch_to_load_model_page)
         self.cut_process_btn.clicked.connect(self.switch_to_cut_process_page)

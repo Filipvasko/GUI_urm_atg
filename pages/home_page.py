@@ -1,4 +1,5 @@
 from PySide6.QtWidgets import QMessageBox
+from pages.message_box import MessageBox
 
 class HomePage:
     def __init__(self, ui):
@@ -17,12 +18,12 @@ class HomePage:
         """
         It will jump to laod model and each filling forms will be deleted
         """
-        print("Hello world")
-        msg_new_project = QMessageBox(self.ui)
-        msg_new_project.setText("Are you sure you want to start new project? All data from current project will be lost")
-        msg_new_project.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        msg_new_project.setDefaultButton(QMessageBox.No)
-        if msg_new_project.exec() == QMessageBox.Yes:
+        msg_new_project = MessageBox.show(
+            parent=self.ui.centralwidget,
+            title="New trajectory",
+            text="Are you sure you want to start new project? All data from current project will be lost",
+        )
+        if msg_new_project == msg_new_project.Yes:
             self.ui.stackedWidget.setCurrentWidget(self.ui.load_model_page)
             for field_name in (
                 "hp_x_text",
