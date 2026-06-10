@@ -33,7 +33,6 @@ class Ui_QMainWindow(object):
         QMainWindow.setWindowIcon(icon)
         QMainWindow.setAutoFillBackground(False)
         QMainWindow.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0.528, y1:0.34, x2:1, y2:1, stop:0 rgba(63, 159, 219, 255), stop:0.579545 rgba(253, 255, 255, 255));")
-        QMainWindow.setAnimated(True)
         self.centralwidget = QWidget(QMainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.side_bar = QWidget(self.centralwidget)

@@ -1,48 +1,49 @@
-from design_gui_v2 import Ui_QMainWindow
-from PySide6.QtWidgets import QWidget, QMessageBox
+from PySide6.QtWidgets import QMessageBox
 
-class HomePage(QWidget, Ui_QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)
+class HomePage:
+    def __init__(self, ui):
+        self.ui = ui
 
         '''
         If the new_trajektorie_btn is clicked, the user will have to go through the process of loading model,
         generating each scanning trajectories and if the open_trajektorie_btn is clicked then user will jump straight to
         databse where he will select frames and then he will just check or edit whole trajectory
         '''
-        self.new_project_btn.clicked.connect(self.new_traj)
-        self.open_traj_btn.clicked.connect(self.open_traj)
+        self.ui.new_project_btn.clicked.connect(self.new_traj)
+        self.ui.open_traj_btn.clicked.connect(self.open_traj)
+
 
     def new_traj(self):
         """
         It will jump to laod model and each filling forms will be deleted
         """
-        msg_new_project = QMessageBox(self)
-        msg_new_project.setText("Are you sure i want to start new project? All data from current project will be lost")
+        print("Hello world")
+        msg_new_project = QMessageBox(self.ui)
+        msg_new_project.setText("Are you sure you want to start new project? All data from current project will be lost")
         msg_new_project.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         msg_new_project.setDefaultButton(QMessageBox.No)
         if msg_new_project.exec() == QMessageBox.Yes:
-            self.stackedWidget.setCurrentWidget(self.load_model_page)
-            self.hp_x_text.clear()
-            self.hp_y_text.clear()
-            self.hp_z_text.clear()
-            self.hp_yaw_text.clear()
-            self.hp_pitch_text.clear()
-            self.hp_roll_text.clear()
-            self.uf_x_text.clear()
-            self.uf_y_text.clear()
-            self.uf_z_text.clear()
-            self.uf_yaw_text.clear()
-            self.uf_pitch_text.clear()
-            self.uf_roll_text.clear()
-        else:
-            pass
+            self.ui.stackedWidget.setCurrentWidget(self.ui.load_model_page)
+            for field_name in (
+                "hp_x_text",
+                "hp_y_text",
+                "hp_z_text",
+                "hp_yaw_text",
+                "hp_pitch_text",
+                "hp_roll_text",
+                "uf_x_text",
+                "uf_y_text",
+                "uf_z_text",
+                "uf_yaw_text",
+                "uf_pitch_text",
+                "uf_roll_text",
+            ):
+                getattr(self.ui, field_name).clear()
     
     def open_traj(self):
         """
         It will jump to page databse and page load_model and create traj will be disabled
         """
-        self.stackedWidget.setCurrentWidget(self.database_page)
-        self.load_model_btn.setEnabled(False)
-        self.new_project_btn.setEnabled(False)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.database_page)
+        self.ui.load_model_btn.setEnabled(False)
+        self.ui.new_project_btn.setEnabled(False)

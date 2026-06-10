@@ -1,11 +1,13 @@
 from design_gui_v2 import Ui_QMainWindow
-from PySide6.QtWidgets import QMainWindow, QApplication, QLabel, QFrame
+from PySide6.QtWidgets import QMainWindow
+from pages.home_page import HomePage
 
 class MySideBar(QMainWindow, Ui_QMainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("ATG Navi GUI")
+        self.home_page = HomePage(self)
 
         self.Menu_btn.clicked.connect(self.switch_to_menu_page)
         self.load_model_btn.clicked.connect(self.switch_to_load_model_page)
@@ -13,6 +15,7 @@ class MySideBar(QMainWindow, Ui_QMainWindow):
         self.trajektorie_btn.clicked.connect(self.switch_to_trajektorie_page)
         self.simulation_btn.clicked.connect(self.switch_to_simulation_page)
         self.database_btn.clicked.connect(self.switch_to_database_page)
+        
 
     def switch_to_menu_page(self):
         self.stackedWidget.setCurrentWidget(self.menu_page)
