@@ -1,4 +1,3 @@
-from PySide6.QtWidgets import QMessageBox
 from pages.message_box import MessageBox
 
 class HomePage:
@@ -23,7 +22,7 @@ class HomePage:
             title="New trajectory",
             text="Are you sure you want to start new project? All data from current project will be lost",
         )
-        if msg_new_project == msg_new_project.Yes:
+        if msg_new_project.Yes:
             self.ui.stackedWidget.setCurrentWidget(self.ui.load_model_page)
             for field_name in (
                 "hp_x_text",

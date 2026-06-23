@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1221</width>
-    <height>825</height>
+    <width>1208</width>
+    <height>798</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -49,7 +49,7 @@
        <x>30</x>
        <y>0</y>
        <width>191</width>
-       <height>621</height>
+       <height>651</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -73,7 +73,7 @@
         <property name="minimumSize">
          <size>
           <width>150</width>
-          <height>40</height>
+          <height>50</height>
          </size>
         </property>
         <property name="font">
@@ -84,9 +84,21 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(0, 85, 255);
+         <string notr="true">QPushButton{
+color: rgb(0, 85, 255);
 background-color: rgb(255, 255, 255);
-border-radius: 15px;</string>
+border-radius: 10px;
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
         </property>
         <property name="text">
          <string>Menu</string>
@@ -106,6 +118,9 @@ border-radius: 15px;</string>
         </property>
         <property name="checked">
          <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
         </property>
         <property name="autoDefault">
          <bool>false</bool>
@@ -128,9 +143,21 @@ border-radius: 15px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
 color: rgb(0, 85, 255);
-border-radius: 10px;</string>
+border-radius: 10px;
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
         </property>
         <property name="text">
          <string>Load model</string>
@@ -145,6 +172,9 @@ border-radius: 10px;</string>
          </size>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -165,9 +195,21 @@ border-radius: 10px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
 color: rgb(0, 85, 255);
-border-radius: 15px;</string>
+border-radius: 10px;
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
         </property>
         <property name="text">
          <string>Cut process</string>
@@ -183,6 +225,9 @@ border-radius: 15px;</string>
          </size>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -203,9 +248,21 @@ border-radius: 15px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
 color: rgb(0, 85, 255);
-border-radius: 15px;</string>
+border-radius: 10px;
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
         </property>
         <property name="text">
          <string>Database</string>
@@ -221,6 +278,9 @@ border-radius: 15px;</string>
          </size>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -241,9 +301,21 @@ border-radius: 15px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
 color: rgb(0, 85, 255);
-border-radius: 15px;</string>
+border-radius: 10px;
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
         </property>
         <property name="text">
          <string>Trajektorie</string>
@@ -259,6 +331,9 @@ border-radius: 15px;</string>
          </size>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -285,9 +360,21 @@ border-radius: 15px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
 color: rgb(0, 85, 255);
-border-radius: 15px;</string>
+border-radius: 10px;
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
         </property>
         <property name="text">
          <string>Simulation</string>
@@ -303,6 +390,9 @@ border-radius: 15px;</string>
          </size>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -336,9 +426,15 @@ border-radius: 15px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
 color: rgb(0, 85, 255);
-border-radius: 15px;</string>
+border-radius: 10px;
+}
+QPushButton:pressed{
+	background-color: rgb(255, 67, 20);
+	color: rgb(255, 255, 255);
+}</string>
         </property>
         <property name="text">
          <string>End</string>
@@ -357,6 +453,9 @@ border-radius: 15px;</string>
         </property>
         <property name="checked">
          <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -482,8 +581,8 @@ background-color: rgb(255, 255, 255);</string>
      <rect>
       <x>260</x>
       <y>90</y>
-      <width>961</width>
-      <height>951</height>
+      <width>951</width>
+      <height>691</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -497,12 +596,12 @@ background-color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>0</y>
+        <y>20</y>
         <width>720</width>
-        <height>702</height>
+        <height>461</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_10">
+      <layout class="QVBoxLayout" name="load_model_page_layout">
        <property name="spacing">
         <number>15</number>
        </property>
@@ -519,7 +618,7 @@ background-color: rgb(255, 255, 255);</string>
         <number>10</number>
        </property>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <layout class="QHBoxLayout" name="open_model_hlayout">
          <property name="spacing">
           <number>70</number>
          </property>
@@ -536,7 +635,7 @@ background-color: rgb(255, 255, 255);</string>
           <number>1</number>
          </property>
          <item>
-          <widget class="QPushButton" name="load_model_btn_2">
+          <widget class="QPushButton" name="open_model_btn">
            <property name="minimumSize">
             <size>
              <width>150</width>
@@ -557,14 +656,29 @@ background-color: rgb(255, 255, 255);</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 85, 255);
-border-radius: 15px;
-border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
+            <string notr="true">QPushButton{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 85, 255);
+    border-radius: 15px;
+    border: 2px solid #00AEEF;
+    border-color: rgb(0, 85, 255);
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
            </property>
            <property name="text">
-            <string>OTEVŘÍT MODEL</string>
+            <string>OPEN MODEL</string>
            </property>
            <property name="icon">
             <iconset>
@@ -582,32 +696,28 @@ border-color: rgb(0, 85, 255);</string>
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="model_path">
+          <widget class="QLineEdit" name="model_path">
            <property name="minimumSize">
             <size>
-             <width>120</width>
-             <height>30</height>
+             <width>150</width>
+             <height>35</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>200</width>
-             <height>30</height>
+             <height>50</height>
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="text">
-            <string>TextLabel</string>
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <layout class="QHBoxLayout" name="parametry_modelu_layaout">
          <property name="spacing">
           <number>30</number>
          </property>
@@ -678,7 +788,28 @@ color: rgb(0, 0, 0);</string>
 color: rgb(255, 255, 255);</string>
                 </property>
                 <property name="text">
-                 <string>PARAMETRY MODELU</string>
+                 <string>MODEL PARAMETRES</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <pointsize>11</pointsize>
+                  <italic>true</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Poloha modelu v ose X [mm]</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -701,27 +832,6 @@ color: rgb(255, 255, 255);</string>
                 </property>
                 <property name="text">
                  <string>Poloha modelu v ose Y [mm]</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignmentFlag::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_5">
-                <property name="font">
-                 <font>
-                  <family>Verdana</family>
-                  <pointsize>11</pointsize>
-                  <italic>true</italic>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color: rgb(255, 255, 255);</string>
-                </property>
-                <property name="text">
-                 <string>Poloha modelu v ose X [mm]</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -837,9 +947,21 @@ background-color: rgb(255, 255, 255);</string>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_4">
+             <layout class="QVBoxLayout" name="hodnoty_modelu_layout">
               <item>
                <widget class="QLabel" name="label_19">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>10000</width>
+                  <height>40</height>
+                 </size>
+                </property>
                 <property name="font">
                  <font>
                   <family>Verdana</family>
@@ -860,86 +982,62 @@ color: rgb(255, 255, 255);</string>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="set_x_model">
-                <property name="styleSheet">
-                 <string notr="true">border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="textInteractionFlags">
-                 <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+               <widget class="QLineEdit" name="model_x_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="set_y_model">
-                <property name="styleSheet">
-                 <string notr="true">border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="textInteractionFlags">
-                 <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+               <widget class="QLineEdit" name="model_y_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="set_z_model">
-                <property name="styleSheet">
-                 <string notr="true">border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="textInteractionFlags">
-                 <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+               <widget class="QLineEdit" name="model_z_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="set_yaw_model">
-                <property name="styleSheet">
-                 <string notr="true">border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="textInteractionFlags">
-                 <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+               <widget class="QLineEdit" name="model_yaw_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="set_pitch_model">
-                <property name="styleSheet">
-                 <string notr="true">border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="textInteractionFlags">
-                 <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+               <widget class="QLineEdit" name="model_pitch_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLabel" name="set_roll_model">
-                <property name="styleSheet">
-                 <string notr="true">border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="textInteractionFlags">
-                 <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+               <widget class="QLineEdit" name="model_roll_text">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
                 </property>
                </widget>
               </item>
@@ -951,20 +1049,90 @@ border-color: rgb(0, 85, 255);</string>
         </layout>
        </item>
        <item>
-        <widget class="QOpenGLWidget" name="openGLWidget">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>350</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>700</width>
-           <height>500</height>
-          </size>
-         </property>
-        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="btn_save_apram">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 85, 255);
+    border-radius: 15px;
+    border: 2px solid #00AEEF;
+    border-color: rgb(0, 85, 255);
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
+           </property>
+           <property name="text">
+            <string>SAVE PARAMETRES</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_update_plot">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 85, 255);
+    border-radius: 15px;
+    border: 2px solid #00AEEF;
+    border-color: rgb(0, 85, 255);
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
+           </property>
+           <property name="text">
+            <string>UPDATE MODEL</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
@@ -973,13 +1141,13 @@ border-color: rgb(0, 85, 255);</string>
      <widget class="QWidget" name="verticalLayoutWidget_5">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>90</x>
         <y>0</y>
         <width>7661</width>
-        <height>711</height>
+        <height>701</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
+      <layout class="QVBoxLayout" name="cut_proces_page_layout">
        <property name="spacing">
         <number>5</number>
        </property>
@@ -996,7 +1164,7 @@ border-color: rgb(0, 85, 255);</string>
         <number>5</number>
        </property>
        <item>
-        <widget class="QWidget" name="wid_sken_strategy" native="true">
+        <widget class="QWidget" name="widget_sken_strategy" native="true">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -1101,14 +1269,14 @@ color: rgb(255, 255, 255);</string>
           </property>
           <layout class="QVBoxLayout" name="layout_vnejsi_sken">
            <item>
-            <widget class="QRadioButton" name="sken_zleva_pravo">
+            <widget class="QRadioButton" name="sken_zleva_pravo_rd">
              <property name="text">
               <string>Skenování zleva do prava</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="sken_zprava_doleva">
+            <widget class="QRadioButton" name="sken_zprava_doleva_rd">
              <property name="text">
               <string>Skenování z prava do leva</string>
              </property>
@@ -1127,14 +1295,14 @@ color: rgb(255, 255, 255);</string>
           </property>
           <layout class="QVBoxLayout" name="layout_vnitrni_sken">
            <item>
-            <widget class="QRadioButton" name="sken_nahoru_dolu">
+            <widget class="QRadioButton" name="sken_nahoru_dolu_rd">
              <property name="text">
               <string>Skenování ze shora dolů</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="sken_dolu_nahoru">
+            <widget class="QRadioButton" name="sken_dolu_nahoru_rd">
              <property name="text">
               <string>Skenování ze spodu nahoru</string>
              </property>
@@ -1170,23 +1338,23 @@ color: rgb(255, 255, 255);</string>
             <height>91</height>
            </rect>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <layout class="QVBoxLayout" name="orientace_sondy_layout">
            <item>
-            <widget class="QRadioButton" name="radioButton">
+            <widget class="QRadioButton" name="sken_kolmo_rd">
              <property name="text">
               <string>Sonda je kolmo k povrchu</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioButton_2">
+            <widget class="QRadioButton" name="sken_libovolne_rd">
              <property name="text">
               <string>Sonda je v rovině skenu natočená</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QRadioButton" name="radioButton_3">
+            <widget class="QRadioButton" name="sken_rovina_rd">
              <property name="text">
               <string>Sonda není v rovině skenu</string>
              </property>
@@ -1253,7 +1421,7 @@ color: rgb(255, 255, 255);</string>
             <x>50</x>
             <y>50</y>
             <width>531</width>
-            <height>21</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="krok_skenu">
@@ -1271,21 +1439,27 @@ color: rgb(255, 255, 255);</string>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="set_krok">
+            <widget class="QLineEdit" name="sken_step_text">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>35</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <family>Verdana</family>
-               <pointsize>12</pointsize>
+               <pointsize>11</pointsize>
               </font>
              </property>
              <property name="text">
               <string>0.5</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignmentFlag::AlignCenter</set>
-             </property>
-             <property name="textInteractionFlags">
-              <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
              </property>
             </widget>
            </item>
@@ -1348,7 +1522,7 @@ color: rgb(255, 255, 255);</string>
            <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QPushButton" name="create_traj">
+         <widget class="QPushButton" name="create_traj_btn">
           <property name="geometry">
            <rect>
             <x>250</x>
@@ -1366,11 +1540,31 @@ color: rgb(255, 255, 255);</string>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(0, 170, 0);
-color: rgb(0, 0, 0);</string>
+           <string notr="true">QPushButton{
+background-color: rgb(0, 170, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed{
+	background-color: rgb(157, 235, 0);
+}</string>
           </property>
           <property name="text">
            <string>VYTVOŘIT TRAJEKTORII</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
           </property>
          </widget>
          <widget class="QWidget" name="layoutWidget">
@@ -1378,8 +1572,8 @@ color: rgb(0, 0, 0);</string>
            <rect>
             <x>40</x>
             <y>60</y>
-            <width>141</width>
-            <height>23</height>
+            <width>172</width>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="layout_start">
@@ -1398,18 +1592,30 @@ color: rgb(0, 0, 0);</string>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="set_start">
+            <widget class="QLineEdit" name="start_traj_text">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>35</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <family>Verdana</family>
-               <pointsize>12</pointsize>
+               <pointsize>11</pointsize>
               </font>
              </property>
              <property name="text">
               <string>100</string>
              </property>
-             <property name="textInteractionFlags">
-              <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -1420,8 +1626,8 @@ color: rgb(0, 0, 0);</string>
            <rect>
             <x>40</x>
             <y>100</y>
-            <width>141</width>
-            <height>24</height>
+            <width>152</width>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="layout_cil">
@@ -1440,24 +1646,36 @@ color: rgb(0, 0, 0);</string>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="set_cil">
+            <widget class="QLineEdit" name="cil_traj_text">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>35</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <family>Verdana</family>
-               <pointsize>13</pointsize>
+               <pointsize>11</pointsize>
               </font>
              </property>
              <property name="text">
               <string>200</string>
              </property>
-             <property name="textInteractionFlags">
-              <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable</set>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
              </property>
             </widget>
            </item>
           </layout>
          </widget>
-         <widget class="QPushButton" name="save_traj">
+         <widget class="QPushButton" name="save_one_traj_btn">
           <property name="geometry">
            <rect>
             <x>250</x>
@@ -1472,32 +1690,101 @@ color: rgb(0, 0, 0);</string>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(170, 255, 255);</string>
+           <string notr="true">QPushButton{
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(12, 243, 255);
+}</string>
           </property>
           <property name="text">
            <string>ULOŽIT TRAJEKTORII</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
           </property>
          </widget>
         </widget>
        </item>
        <item>
-        <widget class="QOpenGLWidget" name="openGLWidget_2">
+        <widget class="QOpenGLWidget" name="cut_process_show">
          <property name="minimumSize">
           <size>
            <width>500</width>
-           <height>300</height>
+           <height>280</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>700</width>
-           <height>350</height>
+           <height>320</height>
           </size>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
+    </widget>
+    <widget class="QWidget" name="database_page">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_37">
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Databáze Userframu, Toolframe, Home polohy, Polohy modelů</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QScrollArea" name="scrollArea_3">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>929</width>
+           <height>647</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="minimumSize">
+             <size>
+              <width>550</width>
+              <height>550</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
     </widget>
     <widget class="QWidget" name="trajektorie_page">
      <widget class="QWidget" name="verticalLayoutWidget_6">
@@ -1506,10 +1793,10 @@ color: rgb(0, 0, 0);</string>
         <x>30</x>
         <y>10</y>
         <width>871</width>
-        <height>671</height>
+        <height>641</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0">
+      <layout class="QVBoxLayout" name="trajektorie_page_layout" stretch="0,0">
        <property name="spacing">
         <number>5</number>
        </property>
@@ -1600,7 +1887,7 @@ color: rgb(255, 255, 255);</string>
             <number>1</number>
            </property>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_7">
+            <layout class="QVBoxLayout" name="vyber_traj_layout">
              <property name="spacing">
               <number>1</number>
              </property>
@@ -1617,7 +1904,7 @@ color: rgb(255, 255, 255);</string>
               <number>10</number>
              </property>
              <item>
-              <widget class="QPushButton" name="create_traj_2">
+              <widget class="QPushButton" name="open_traj_btn">
                <property name="minimumSize">
                 <size>
                  <width>150</width>
@@ -1639,9 +1926,14 @@ color: rgb(255, 255, 255);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">border: 2px solid #00AEEF;
+                <string notr="true">QPushButton{
+border: 2px solid #00AEEF;
 border-color: rgb(0, 85, 255);
-color: rgb(0, 0, 0);</string>
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}</string>
                </property>
                <property name="text">
                 <string>OTEVŘÍT SEZNAM TRAJEKTORIÍ</string>
@@ -1649,7 +1941,7 @@ color: rgb(0, 0, 0);</string>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="create_traj_3">
+              <widget class="QPushButton" name="del_traj_btn">
                <property name="minimumSize">
                 <size>
                  <width>220</width>
@@ -1671,9 +1963,14 @@ color: rgb(0, 0, 0);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">border: 2px solid #00AEEF;
+                <string notr="true">QPushButton{
+border: 2px solid #00AEEF;
 border-color: rgb(0, 85, 255);
-color: rgb(0, 0, 0);</string>
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}</string>
                </property>
                <property name="text">
                 <string>SMAZAT VYBRANOU TRAJEKTORII</string>
@@ -1681,7 +1978,7 @@ color: rgb(0, 0, 0);</string>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="create_traj_4">
+              <widget class="QPushButton" name="save__all_traj_btn">
                <property name="minimumSize">
                 <size>
                  <width>150</width>
@@ -1703,10 +2000,15 @@ color: rgb(0, 0, 0);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">border: 2px solid #00AEEF;
+                <string notr="true">QPushButton{
+border: 2px solid #00AEEF;
 background-color: rgb(179, 255, 250);
 border-color: rgb(0, 85, 255);
-color: rgb(0, 0, 0);</string>
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed{
+	background-color: rgb(161, 241, 0);
+}</string>
                </property>
                <property name="text">
                 <string>ULOŽIT VÝBĚR</string>
@@ -1716,7 +2018,7 @@ color: rgb(0, 0, 0);</string>
             </layout>
            </item>
            <item>
-            <widget class="QScrollArea" name="scrollArea">
+            <widget class="QScrollArea" name="scroll_vyber_traj">
              <property name="minimumSize">
               <size>
                <width>400</width>
@@ -1806,10 +2108,10 @@ color: rgb(255, 255, 255);</string>
             <x>20</x>
             <y>50</y>
             <width>761</width>
-            <height>281</height>
+            <height>270</height>
            </rect>
           </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <layout class="QHBoxLayout" name="edit_traj_layout">
            <property name="spacing">
             <number>10</number>
            </property>
@@ -1826,7 +2128,7 @@ color: rgb(255, 255, 255);</string>
             <number>10</number>
            </property>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_8">
+            <layout class="QVBoxLayout" name="edit_traj_btn_layout">
              <property name="spacing">
               <number>15</number>
              </property>
@@ -1843,17 +2145,17 @@ color: rgb(255, 255, 255);</string>
               <number>10</number>
              </property>
              <item>
-              <widget class="QPushButton" name="create_traj_5">
+              <widget class="QPushButton" name="add_arrival_btn">
                <property name="minimumSize">
                 <size>
                  <width>250</width>
-                 <height>50</height>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>250</width>
-                 <height>50</height>
+                 <height>40</height>
                 </size>
                </property>
                <property name="font">
@@ -1865,9 +2167,14 @@ color: rgb(255, 255, 255);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">border: 2px solid #00AEEF;
+                <string notr="true">QPushButton{
+border: 2px solid #00AEEF;
 border-color: rgb(0, 85, 255);
-color: rgb(0, 0, 0);</string>
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}</string>
                </property>
                <property name="text">
                 <string>PŘIDAT PŘÍJEZDOVOU TRAJEKTORII</string>
@@ -1875,17 +2182,17 @@ color: rgb(0, 0, 0);</string>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="create_traj_6">
+              <widget class="QPushButton" name="add_departure_brn">
                <property name="minimumSize">
                 <size>
                  <width>220</width>
-                 <height>50</height>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>250</width>
-                 <height>50</height>
+                 <height>40</height>
                 </size>
                </property>
                <property name="font">
@@ -1897,9 +2204,14 @@ color: rgb(0, 0, 0);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">border: 2px solid #00AEEF;
+                <string notr="true">QPushButton{
+border: 2px solid #00AEEF;
 border-color: rgb(0, 85, 255);
-color: rgb(0, 0, 0);</string>
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}</string>
                </property>
                <property name="text">
                 <string>PŘIDAT ODJEZDOVOU TRAJEKTORII</string>
@@ -1907,17 +2219,17 @@ color: rgb(0, 0, 0);</string>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="create_traj_7">
+              <widget class="QPushButton" name="confirm_traj_brn">
                <property name="minimumSize">
                 <size>
                  <width>200</width>
-                 <height>50</height>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>250</width>
-                 <height>50</height>
+                 <height>40</height>
                 </size>
                </property>
                <property name="font">
@@ -1929,10 +2241,15 @@ color: rgb(0, 0, 0);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">border: 2px solid #00AEEF;
+                <string notr="true">QPushButton{
+border: 2px solid #00AEEF;
 background-color: rgb(179, 255, 250);
 border-color: rgb(0, 85, 255);
-color: rgb(0, 0, 0);</string>
+color: rgb(0, 0, 0);
+}
+QPushButton:pressed{
+	background-color: rgb(161, 241, 0);
+}</string>
                </property>
                <property name="text">
                 <string>POTVRDIT VOLBU</string>
@@ -1990,7 +2307,7 @@ color: rgb(0, 0, 0);</string>
         <height>651</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_11">
+      <layout class="QVBoxLayout" name="simulation_page_layout">
        <property name="leftMargin">
         <number>10</number>
        </property>
@@ -2004,7 +2321,7 @@ color: rgb(0, 0, 0);</string>
         <number>10</number>
        </property>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_9">
+        <layout class="QVBoxLayout" name="set_robot_config_layout">
          <property name="leftMargin">
           <number>10</number>
          </property>
@@ -2116,7 +2433,7 @@ border-color: rgb(0, 85, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox">
+              <widget class="QComboBox" name="config_robot_cb">
                <property name="minimumSize">
                 <size>
                  <width>90</width>
@@ -2186,7 +2503,7 @@ border-color: rgb(0, 85, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_2">
+              <widget class="QComboBox" name="typ_sondy_cb">
                <property name="minimumSize">
                 <size>
                  <width>130</width>
@@ -2208,7 +2525,7 @@ border-color: rgb(0, 85, 255);</string>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <layout class="QHBoxLayout" name="hp_layout">
          <property name="leftMargin">
           <number>0</number>
          </property>
@@ -2289,7 +2606,7 @@ border-color: rgb(0, 85, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit">
+              <widget class="QLineEdit" name="hp_x_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2346,7 +2663,7 @@ border-color: rgb(0, 85, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_2">
+              <widget class="QLineEdit" name="hp_y_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2403,7 +2720,7 @@ border-color: rgb(0, 85, 255);</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_3">
+              <widget class="QLineEdit" name="hp_z_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2507,7 +2824,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_4">
+              <widget class="QLineEdit" name="hp_yaw_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2564,7 +2881,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_5">
+              <widget class="QLineEdit" name="hp_pitch_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2621,7 +2938,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_6">
+              <widget class="QLineEdit" name="hp_roll_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2643,7 +2960,7 @@ border-radius: 10px;</string>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <layout class="QHBoxLayout" name="tf_layout">
          <property name="leftMargin">
           <number>0</number>
          </property>
@@ -2724,7 +3041,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_7">
+              <widget class="QLineEdit" name="tf_x_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2781,7 +3098,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_8">
+              <widget class="QLineEdit" name="tf_y_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2838,7 +3155,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_9">
+              <widget class="QLineEdit" name="tf_z_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2942,7 +3259,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_10">
+              <widget class="QLineEdit" name="tf_yaw_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -2999,7 +3316,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_11">
+              <widget class="QLineEdit" name="tf_pitch_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3056,7 +3373,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_12">
+              <widget class="QLineEdit" name="tf_roll_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3092,7 +3409,7 @@ border-radius: 10px;</string>
           <number>0</number>
          </property>
          <item>
-          <widget class="QWidget" name="widget_4" native="true">
+          <widget class="QWidget" name="uf_layout" native="true">
            <property name="minimumSize">
             <size>
              <width>850</width>
@@ -3159,7 +3476,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_13">
+              <widget class="QLineEdit" name="uf_x_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3216,7 +3533,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_14">
+              <widget class="QLineEdit" name="uf_y_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3273,7 +3590,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_15">
+              <widget class="QLineEdit" name="uf_z_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3377,7 +3694,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_16">
+              <widget class="QLineEdit" name="uf_yaw_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3434,7 +3751,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_17">
+              <widget class="QLineEdit" name="uf_pitch_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3491,7 +3808,7 @@ border-radius: 10px;</string>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_18">
+              <widget class="QLineEdit" name="uf_roll_text">
                <property name="minimumSize">
                 <size>
                  <width>120</width>
@@ -3514,7 +3831,7 @@ border-radius: 10px;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="run_sim_btn">
       <property name="geometry">
        <rect>
         <x>720</x>
@@ -3543,17 +3860,32 @@ border-radius: 10px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 255, 162);
+       <string notr="true">QPushButton{
+background-color: rgb(0, 255, 162);
 color: rgb(0, 0, 0);
 border-radius: 15px;
 border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
+border-color: rgb(0, 85, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(163, 244, 0);
+}
+QPushButton:disabled{
+	background-color: rgb(170, 255, 127);
+   	color: rgb(214, 214, 214);
+}</string>
       </property>
       <property name="text">
        <string>SPUSTIT SIMULACI</string>
       </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="restart_sim_btn">
       <property name="geometry">
        <rect>
         <x>479</x>
@@ -3582,11 +3914,20 @@ border-color: rgb(0, 85, 255);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);
+       <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
 background-color: rgb(255, 170, 127);
 border-radius: 15px;
 border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
+border-color: rgb(0, 85, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(255, 213, 170);
+}
+QPushButton:disabled{
+	background-color: rgb(170, 255, 127);
+   	color: rgb(214, 214, 214);
+}</string>
       </property>
       <property name="text">
        <string>RESTARTOVAT SIMULACI</string>
@@ -3639,50 +3980,6 @@ border-color: rgb(0, 85, 255);</string>
         <number>10</number>
        </property>
        <item>
-        <widget class="QPushButton" name="exist_project_btn">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Verdana</family>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Otestuje se již vytvořená trajektorie&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 85, 255);
-background-color: rgb(255, 255, 255);
-border-radius: 15px;
-border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
-         </property>
-         <property name="text">
-          <string>OPEN GENERATOR</string>
-         </property>
-         <property name="icon">
-          <iconset theme="QIcon::ThemeIcon::FolderOpen"/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QPushButton" name="new_project_btn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -3707,11 +4004,26 @@ border-color: rgb(0, 85, 255);</string>
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Vytvoří se nová trajektorie pro konkrétní díl&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(0, 85, 255);
+          <string notr="true">QPushButton{
+color: rgb(0, 85, 255);
 border-radius: 15px;
 background-color: rgb(255, 255, 255);
 border: 2px solid #00AEEF;
-border-color: rgb(0, 85, 255);</string>
+border-color: rgb(0, 85, 255);
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
          </property>
          <property name="text">
           <string>NEW GENERATOR</string>
@@ -3724,6 +4036,80 @@ border-color: rgb(0, 85, 255);</string>
            <width>30</width>
            <height>30</height>
           </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exist_project_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Verdana</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Otestuje se již vytvořená trajektorie&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: rgb(0, 85, 255);
+border-radius: 15px;
+background-color: rgb(255, 255, 255);
+border: 2px solid #00AEEF;
+border-color: rgb(0, 85, 255);
+}
+QPushButton:pressed {
+	background-color: rgb(206, 206, 206);
+}
+QPushButton:checked {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 85, 255);
+    border: 2px solid #00AEEF;
+}
+QPushButton:disabled{
+	background-color: rgb(170, 170, 170);
+	color: rgb(225, 225, 225);
+	border: 2px solid #00AEEF;
+}</string>
+         </property>
+         <property name="text">
+          <string>OPEN GENERATOR</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::FolderOpen"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
          </property>
         </widget>
        </item>

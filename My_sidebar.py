@@ -1,7 +1,9 @@
-from design_gui_v2 import Ui_QMainWindow
+from design_v7 import Ui_QMainWindow
 from PySide6.QtWidgets import QMainWindow
 from pages.home_page import HomePage
 from pages.load_model_page import LoadModel
+from src.python.config.dataclass import GUIData
+from src.python.cut_process.cut_program_step import Cutprocess_step
 from pathlib import Path
 
 class MySideBars(QMainWindow, Ui_QMainWindow):
@@ -10,9 +12,10 @@ class MySideBars(QMainWindow, Ui_QMainWindow):
         self.setupUi(self)
         self.setWindowTitle("ATG Navi GUI")
         self.root_folder = Path(__file__).resolve().parent
-
+        self.gui_data = GUIData()
         self.home_page = HomePage(self)
-        self.load_model = LoadModel(self,self.root_folder)
+        self.load_model = LoadModel(self,self.root_folder, self.gui_data)
+        self.cut_process_process = Cutprocess_step(self,data= self.gui_data)
         self.Menu_btn.clicked.connect(self.switch_to_menu_page)
         self.load_model_btn.clicked.connect(self.switch_to_load_model_page)
         self.cut_process_btn.clicked.connect(self.switch_to_cut_process_page)
